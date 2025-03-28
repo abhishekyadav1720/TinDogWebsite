@@ -1,0 +1,262 @@
+/* Cleaned styles.css */
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-bold";
+}
+
+p {
+  color: #312d2d;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+.container-fluid{
+  padding: 3% 15% 7%;
+}
+.big-heading{
+  font-family: "Montserrat-black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.navbar{
+  padding: 0 0 4.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+.title-image{
+  width: 21%;
+  transform: rotate(25deg);
+  position: absolute;
+}
+#features{
+  padding: 7% 15%;
+  background-color: #cd9898;
+  position: relative;
+   z-index: 1;
+}
+.feature-title{
+  font-size: 1.5rem;
+}
+.features-box{
+  padding: 5%;
+  background-color: navajowhite;
+}
+.icon{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover{
+  color: #ff4c68;
+}
+#testimonials {
+  padding: 7% 15%;
+  background-color: #cd9898;
+  color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+#testimonials .carousel-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+#testimonials .carousel-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+#press {
+ background-color: #ef8172;
+ padding-bottom: 3%;
+}
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+#pricing{
+  padding: 100px;
+}
+.pricing-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+#cta{
+  padding: 7% 15%;
+  background-color: #ff4c68;
+  color: #fff;
+}
+#footer{
+  padding: 7% 15%;
+}
+.social-icon{
+  margin: 20px 10px;
+} 
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    width: 50%;
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* Dog Cards Section */
+#dog-cards {
+  padding: 0% 15%;
+  background-color: #cd9898;
+}
+
+#dog-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dog-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dog-card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dog-card .details {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.dog-card .details.hidden {
+  display: none;
+}
+
+.dog-card .like-btn {
+  background-color: #ff4c68;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dog-card .like-btn:hover {
+  background-color: #e63950;
+}
+
+.dog-card .heart-icon {
+  margin-right: 5px;
+}
+
+/* Like Buttons Container */
+.like-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Add some spacing above the buttons */
+}
+
+.like-btn {
+  background-color: #ff4c68;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.like-btn:hover {
+  background-color: #e63950;
+}
+
+/* Search and Filter */
+#search-filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#search-bar,
+#filter-age {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#search-bar:focus,
+#filter-age:focus {
+  outline: none;
+  border-color: #ff4c68;
+  box-shadow: 0 0 5px rgba(255, 76, 104, 0.5);
+}
+
+/* Featured Dogs Section */
+#featured-dogs{
+  padding: 7% 15%;
+  background-color: #dca0a0;
+}
+
+#featured-dogs img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
